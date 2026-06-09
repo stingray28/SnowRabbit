@@ -61,8 +61,8 @@ public class PlayerManager : MonoBehaviour
         Debug_setInvincibilityMode = !Debug_setInvincibilityMode;
     }
 
-    public void OnPause()
-    {
-        GameManager.Instance.Pause();
-    }
+    //public void OnPause()
+    //{
+    //    GameManager.Instance.Pause();
+    //}
 }
