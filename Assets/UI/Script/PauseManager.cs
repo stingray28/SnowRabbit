@@ -4,6 +4,12 @@ using UnityEngine.InputSystem;
 
 public class PauseManager : MonoBehaviour
 {
+    private static PauseManager instance;
+    public static PauseManager Instance { get { return instance; } }
+
+    [Header("MenuManager")]
+    [SerializeField] private MenuManager menuManager;
+
     [Header("Root")]
     [SerializeField] private GameObject pauseUI;
     [SerializeField] private GameObject pauseMenuPanel;
@@ -46,6 +52,8 @@ public class PauseManager : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
+
         pauseUI.SetActive(false);
 
         pauseMenuPanel.SetActive(true);
@@ -384,7 +392,7 @@ public class PauseManager : MonoBehaviour
                 break;
 
             case 3:
-                Debug.Log("타이틀로 선택");
+                menuManager.ToMain();
                 break;
         }
     }
@@ -394,15 +402,15 @@ public class PauseManager : MonoBehaviour
         switch (currentIndex)
         {
             case 0:
-                Debug.Log("슬롯 1 선택");
+                menuManager.ToPlay(1);
                 break;
 
             case 1:
-                Debug.Log("슬롯 2 선택");
+                menuManager.ToPlay(2);
                 break;
 
             case 2:
-                Debug.Log("슬롯 3 선택");
+                menuManager.ToPlay(3);
                 break;
 
             case 3:

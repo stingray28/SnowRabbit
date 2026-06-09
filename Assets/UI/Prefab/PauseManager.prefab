@@ -45,9 +45,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
   pauseUI: {fileID: 0}
-  selectionBG: {fileID: 0}
-  menuItems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  pauseMenuPanel: {fileID: 0}
+  loadPanel: {fileID: 1032766593250922368, guid: 6d0d3331df44e2547a0e1a466f822036, type: 3}
+  settingPanel: {fileID: 0}
+  pauseMenuAnimator: {fileID: 0}
+  loadPanelAnimator: {fileID: 0}
+  settingPanelAnimator: {fileID: 0}
+  pauseSelectionBG: {fileID: 0}
+  pauseMenuItems: []
+  loadSelectionBG: {fileID: 0}
+  loadMenuItems: []
+  settingSelectionBG: {fileID: 0}
+  settingCategoryItems: []
+  settingCategoryIcons: []
+  graphicPanel: {fileID: 0}
+  soundPanel: {fileID: 0}
+  controlPanel: {fileID: 0}
+  languagePanel: {fileID: 0}
+  pointerLockDuration: 0.2
